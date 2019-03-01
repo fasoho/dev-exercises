@@ -1,4 +1,4 @@
-package csnam.edu.java;
+package csnam.edu.tdd.tddmoneyexample;
 
 import static org.junit.Assert.assertTrue;
 
