@@ -1,4 +1,4 @@
-package csnam.edu.tdd.tddmoneyexample;
+package csnam.edu.tdd;
 
 /**
  * Hello world!
