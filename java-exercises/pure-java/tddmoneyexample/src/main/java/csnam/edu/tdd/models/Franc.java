@@ -5,9 +5,7 @@ package csnam.edu.tdd.models;
  * @user jp
  * @date 2019-03-01
  */
-public class Franc {
-
-  private int amount;
+public class Franc extends Money {
 
   public Franc(int amount) {
     this.amount = amount;
