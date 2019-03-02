@@ -1,5 +1,8 @@
 package csnam.edu.tdd;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import csnam.edu.tdd.models.Greeting;
 import org.junit.jupiter.api.Test;
 
 /**
