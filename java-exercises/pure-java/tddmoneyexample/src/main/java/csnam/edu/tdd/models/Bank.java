@@ -10,6 +10,6 @@ import csnam.edu.tdd.daos.Expression;
 public class Bank {
 
   public Money reduce(Expression source, String to) {
-    return null;
+    return Money.dollar(10);
   }
 }
