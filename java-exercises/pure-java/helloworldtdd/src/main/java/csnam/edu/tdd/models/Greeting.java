@@ -8,10 +8,10 @@ package csnam.edu.tdd.models;
 public class Greeting {
 
   public String getName() {
-    return null;
+    return "";
   }
 
   public String getMessage() {
-    return null;
+    return "Hello World";
   }
 }
