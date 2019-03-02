@@ -5,8 +5,13 @@ package csnam.edu.tdd.models;
  * @user jp
  * @date 2019-03-01
  */
-public class Money {
+public abstract class Money {
+
   protected int amount;
+
+  public static Money dollar(int amount) {
+    return new Dollar(amount);
+  }
 
   @Override
   public boolean equals(Object object) {
@@ -14,4 +19,6 @@ public class Money {
 
     return amount == money.amount && getClass().equals(money.getClass());
   }
+
+  public abstract Money times(int multiplier);
 }
