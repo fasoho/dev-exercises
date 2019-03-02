@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import csnam.edu.tdd.daos.Expression;
 import csnam.edu.tdd.models.Bank;
 import csnam.edu.tdd.models.Money;
+import csnam.edu.tdd.models.Sum;
 import org.junit.jupiter.api.Test;
 
 /**
