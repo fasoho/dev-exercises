@@ -23,13 +23,13 @@ public class AppTest {
   }
 
   @Test
-  public void testCurrency() {
+  public void testCurrency() throws Exception {
     assertEquals("USD", Money.dollar(1).currency());
     assertEquals("CHF", Money.franc(1).currency());
   }
 
   @Test
-  public void testSimpleAddition() {
+  public void testSimpleAddition() throws Exception {
     Money five = Money.dollar(5);
     Expression sum = five.plus(five);
     Bank bank = new Bank();
@@ -38,11 +38,18 @@ public class AppTest {
   }
 
   @Test
-  public void testReturnsSum() {
+  public void testReturnsSum() throws Exception {
     Money five = Money.dollar(5);
     Expression result = five.plus(five);
     Sum sum = (Sum) result;
     assertEquals(five, sum.augend);
     assertEquals(five, sum.addend);
+  }
+
+  @Test
+  public void testReduceMoney() throws Exception {
+    Bank bank = new Bank();
+    Money result = bank.reduce(Money.dollar(1), "USD");
+    assertEquals(Money.dollar(1), result);
   }
 }
