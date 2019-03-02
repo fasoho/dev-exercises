@@ -20,6 +20,7 @@ public class AppTest {
   @Test
   public void testHelloworldWithName() {
     Greeting greeting = new Greeting();
+    greeting.setName("Tommy");
     assertEquals(greeting.getName(), "Tommy");
     assertEquals(greeting.getMessage(),"Hello Tommy");
   }

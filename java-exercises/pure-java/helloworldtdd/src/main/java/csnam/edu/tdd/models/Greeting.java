@@ -7,11 +7,23 @@ package csnam.edu.tdd.models;
  */
 public class Greeting {
 
+  private String name = "";
+
   public String getName() {
-    return "";
+    return name;
   }
 
   public String getMessage() {
-    return "Hello World";
+    if (name == "") {
+      return "Hello World";
+    } else {
+      return "Hello " + name;
+    }
+  }
+
+
+  public String setName(String name) {
+    this.name = name;
+    return name;
   }
 }
