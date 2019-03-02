@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import csnam.edu.tdd.models.Bank;
 import csnam.edu.tdd.models.Money;
 import org.junit.jupiter.api.Test;
 
@@ -27,7 +28,8 @@ public class AppTest {
 
   @Test
   public void testSimpleAddition() {
-    Money reduced = Money.dollar(5).plus(Money.dollar(5));
+    Bank bank = new Bank();
+    Money reduced = bank.reduce(sum, "USD");
     assertEquals(Money.dollar(10), reduced);
   }
 }
