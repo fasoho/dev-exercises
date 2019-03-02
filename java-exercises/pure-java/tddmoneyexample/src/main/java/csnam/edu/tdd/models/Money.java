@@ -7,7 +7,7 @@ import csnam.edu.tdd.daos.Expression;
  * @user jp
  * @date 2019-03-01
  */
-public class Money {
+public class Money implements Expression {
 
   protected int amount;
   protected String currency;
