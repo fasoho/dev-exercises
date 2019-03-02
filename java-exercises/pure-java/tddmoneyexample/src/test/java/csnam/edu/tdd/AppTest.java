@@ -5,6 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import csnam.edu.tdd.models.Dollar;
+import csnam.edu.tdd.models.Franc;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -13,10 +14,17 @@ import org.junit.jupiter.api.Test;
 public class AppTest {
 
   @Test
-  public void testMultiplication() throws Exception {
+  public void testDollarMultiplication() throws Exception {
     Dollar five = new Dollar(5);
     assertEquals(new Dollar(10), five.times(2));
     assertEquals(new Dollar(15), five.times(3));
+  }
+
+  @Test
+  public void testFrancMultiplication() throws Exception {
+    Franc five = new Franc(5);
+    assertEquals(new Franc(10), five.times(2));
+    assertEquals(new Franc(15), five.times(3));
   }
 
   @Test
