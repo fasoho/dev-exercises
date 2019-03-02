@@ -1,5 +1,7 @@
 package csnam.edu.tdd.models;
 
+import csnam.edu.tdd.daos.Expression;
+
 /**
  * @project tddmoneyexample
  * @user jp
@@ -7,4 +9,7 @@ package csnam.edu.tdd.models;
  */
 public class Bank {
 
+  public Money reduce(Expression source, String to) {
+    return null;
+  }
 }
