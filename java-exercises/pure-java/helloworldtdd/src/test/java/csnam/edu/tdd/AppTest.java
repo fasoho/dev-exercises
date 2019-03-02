@@ -16,4 +16,11 @@ public class AppTest {
     assertEquals(greeting.getName(), "");
     assertEquals(greeting.getMessage(), "Hello World");
   }
+
+  @Test
+  public void testHelloworldWithName() {
+    Greeting greeting = new Greeting();
+    assertEquals(greeting.getName(), "Tommy");
+    assertEquals(greeting.getMessage(),"Hello Tommy");
+  }
 }
